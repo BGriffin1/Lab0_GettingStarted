@@ -13,7 +13,12 @@ ruleset hello_world {
         msg = "Hello Mr." + obj;
         msg
       }
+      monkey = function(obj) {
+        msg = "Hello new monkeyRule" + obj;
+        msg
+      }
     }
+    
      
     rule hello_world {
       select when echo hello
