@@ -5,7 +5,7 @@ ruleset hello_world {
   A first ruleset for the Quickstart
   >>
       author "Phil Windley"
-      shares hello, monkey, monkeybool
+      shares hello, monkey
     }
      
     global {
