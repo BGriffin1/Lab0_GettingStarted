@@ -9,10 +9,10 @@ ruleset hello_world {
     }
      
     global {
-      hello = function(obj) {
-        msg = "Hello Mr." + obj;
-        msg
-      }
+      // hello = function(obj) {
+      //   msg = "Hello Mr." + obj;
+      //   msg
+      // }
       monkey = function(obj) {
         msg = "Hello new monkeyRule" + obj;
         msg
