@@ -5,14 +5,14 @@ ruleset hello_world {
   A first ruleset for the Quickstart
   >>
       author "Phil Windley"
-      shares hello
+      shares hello, monkey
     }
      
     global {
-      // hello = function(obj) {
-      //   msg = "Hello Mr." + obj;
-      //   msg
-      // }
+      hello = function(obj) {
+        msg = "Hello Mr." + obj;
+        msg
+      }
       monkey = function(obj) {
         msg = "Hello new monkeyRule" + obj;
         msg
