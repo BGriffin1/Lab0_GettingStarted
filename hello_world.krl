@@ -5,7 +5,7 @@ ruleset hello_world {
   A first ruleset for the Quickstart
   >>
       author "Phil Windley"
-      shares hello, monkey
+      shares hello, monkey, monkeybool
     }
      
     global {
@@ -30,6 +30,17 @@ ruleset hello_world {
       pre {
         name = event:attr("name").klog("our passed in name: ") 
         || "Monkey"
+      }
+      
+      send_directive("say", {"something": "Hello " + name})
+      
+    }
+    rule hello_monkey_bool {
+      select when echo monkeybool
+      pre {
+        name = event:attr("name").klog("our passed in name: ")
+        => event:attr("name")
+        | "Monkey"
       }
       
       send_directive("say", {"something": "Hello " + name})
