@@ -28,10 +28,11 @@ ruleset hello_world {
     rule hello_monkey {
       select when echo monkey
       pre {
-        name = event:attr("name").klog("our passed in name: ")
+        name = event:attr("name").klog("our passed in name: ") 
+        || ent:name.klog("Monkey")
       }
       
-      send_directive("say", {"something": "Hello " + name || "monkey"})
+      send_directive("say", {"something": "Hello " + name})
       
     }
      
