@@ -1,6 +1,6 @@
 ruleset hello_monkey {
     meta {
-      name "Hello World"
+      name "Hello Monkey"
       description <<
   A first ruleset for the Quickstart
   >>
